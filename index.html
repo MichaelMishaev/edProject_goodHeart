@@ -35,6 +35,22 @@
         .diagonal-bg {
             clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
         }
+        /* RTL Direction Fixes */
+        [dir="rtl"] .lang-btn {
+            text-align: right;
+        }
+        [dir="ltr"] .lang-btn {
+            text-align: left;
+        }
+        /* Ensure language switcher doesn't flip on RTL */
+        #language-switcher {
+            direction: ltr;
+        }
+        /* Footer icons spacing fix for RTL */
+        [dir="rtl"] footer .space-x-reverse {
+            margin-right: 0;
+            margin-left: 2rem;
+        }
     </style>
 <script>
         tailwind.config = {
@@ -61,25 +77,25 @@
 <!-- Decorative Shapes -->
 <div class="absolute top-0 right-0 w-64 h-64 bg-sunny-yellow rounded-full -mr-32 -mt-32 opacity-30 blur-3xl"></div>
 <div class="absolute top-1/4 left-0 w-48 h-48 bg-energetic-orange rounded-full -ml-24 opacity-20 blur-2xl"></div>
-<!-- Language Switcher -->
-<div class="fixed top-4 left-4 z-50 flex gap-2" id="language-switcher">
+<!-- Language Switcher - Mobile Optimized -->
+<div class="fixed top-4 left-4 z-50 flex flex-col md:flex-row gap-2" id="language-switcher">
     <button
         data-lang="he"
-        class="lang-btn bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold shadow-md hover:bg-action-teal hover:text-white transition-all duration-300 active:scale-95"
+        class="lang-btn bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full font-bold shadow-md hover:bg-action-teal hover:text-white transition-all duration-300 active:scale-95 text-sm md:text-base"
         aria-label="עברית">
-        🇮🇱 עברית
+        🇮🇱 <span class="hidden md:inline">עברית</span><span class="md:hidden">HE</span>
     </button>
     <button
         data-lang="en"
-        class="lang-btn bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold shadow-md hover:bg-action-teal hover:text-white transition-all duration-300 active:scale-95"
+        class="lang-btn bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full font-bold shadow-md hover:bg-action-teal hover:text-white transition-all duration-300 active:scale-95 text-sm md:text-base"
         aria-label="English">
-        🇬🇧 English
+        🇬🇧 <span class="hidden md:inline">English</span><span class="md:hidden">EN</span>
     </button>
     <button
         data-lang="ru"
-        class="lang-btn bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold shadow-md hover:bg-action-teal hover:text-white transition-all duration-300 active:scale-95"
+        class="lang-btn bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full font-bold shadow-md hover:bg-action-teal hover:text-white transition-all duration-300 active:scale-95 text-sm md:text-base"
         aria-label="Русский">
-        🇷🇺 Русский
+        🇷🇺 <span class="hidden md:inline">Русский</span><span class="md:hidden">RU</span>
     </button>
 </div>
 <header class="container mx-auto px-6 pt-12 text-center relative z-10" data-purpose="hero-section">
