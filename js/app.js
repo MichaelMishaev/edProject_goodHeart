@@ -131,11 +131,25 @@ function updateActiveButton(lang) {
 }
 
 /**
- * Handle CTA button click
+ * Handle CTA button click with confetti effect
  */
 function handleCtaClick() {
     const message = translations[currentLang].cta.alert;
-    alert(message);
+
+    // Trigger confetti if library is loaded
+    if (typeof confetti === 'function') {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#2DD4BF', '#FDE047', '#FB923C', '#A78BFA']
+        });
+    }
+
+    // Show success message
+    setTimeout(() => {
+        alert(message);
+    }, 300);
 }
 
 /**
