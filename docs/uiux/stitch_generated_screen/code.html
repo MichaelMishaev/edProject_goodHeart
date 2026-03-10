@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>יום המעשים הטובים: הכוח להיות טוב!</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Heebo for Hebrew Support -->
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="typography">
+        body {
+            font-family: 'Heebo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bubble-font {
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+        }
+    </style>
+<style data-purpose="custom-animations">
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        .card-reveal {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-reveal:hover {
+            transform: translateY(-10px);
+        }
+        .diagonal-bg {
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'action-teal': '#2DD4BF',
+                        'sunny-yellow': '#FDE047',
+                        'energetic-orange': '#FB923C',
+                        'kind-purple': '#A78BFA'
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                        '5xl': '3rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 overflow-x-hidden">
+<!-- BEGIN: Integrated Hero & Main Flow -->
+<div class="relative min-h-screen bg-action-teal diagonal-bg pb-32">
+<!-- Decorative Shapes -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-sunny-yellow rounded-full -mr-32 -mt-32 opacity-30 blur-3xl"></div>
+<div class="absolute top-1/4 left-0 w-48 h-48 bg-energetic-orange rounded-full -ml-24 opacity-20 blur-2xl"></div>
+<header class="container mx-auto px-6 pt-12 text-center relative z-10" data-purpose="hero-section">
+<div class="inline-block bg-white/20 backdrop-blur-md p-2 px-6 rounded-full mb-8 shadow-sm border border-white/30">
+<span class="text-white font-black text-sm tracking-widest uppercase">#יום_המעשים_הטובים</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black text-white mb-8 bubble-font leading-tight">
+            יום המעשים הטובים:<br/>
+<span class="text-sunny-yellow">הכוח להיות טוב!</span>
+</h1>
+<p class="text-white text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
+            מוכנים לשנות את העולם? כל מעשה קטן יכול ליצור שינוי ענק. 
+            <br class="hidden md:block"/>
+            הנה כמה דרכים מגניבות שבהן תוכלו להפיץ אור כבר היום!
+        </p>
+<div class="flex justify-center">
+<div class="animate-bounce bg-white/10 p-3 rounded-full">
+<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</header>
+<!-- Seamless Flow into Tips -->
+<main class="container mx-auto px-6 mt-20 relative z-20" id="tips-section">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Tip 1: Smiling -->
+<div class="group bg-white rounded-5xl shadow-2xl overflow-hidden card-reveal border-b-8 border-action-teal" data-purpose="tip-card">
+<div class="h-64 overflow-hidden relative">
+<img alt="ילד מחייך לחבר בבית הספר" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIjgz0tIv2kVCwzAWD-Ilsl8zmfbWGOQhnrCrqcggVxE1b7zwJBdT4zzSHdtmRFB4QOtpFmhkR14ONywYPTAWS3hpf8oNDWw6KD50TR9lsTKBKaqQS8OUINzcT8hKOrcwyt2mAIXwCQeqUYvYEN2C7t8pUltjvFbw9IXMTy40VZeB41UAd8HwC1gpTYzMRuhauLcqRS6rOfjl9FMepHBXCRWhXzpe812dY250xYI2I2kKau7TO-_J9PnpSe0phBx5jT39XJG9c_ztC"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-action-teal shadow-md flex items-center gap-2">
+<span>😊</span> הכי פשוט
+                    </div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black mb-4 text-gray-900">חייכו למישהו שאתם לא מכירים</h3>
+<p class="text-gray-600 text-lg leading-relaxed">
+                        חיוך הוא מדבק! כשאתם מחייכים למישהו במסדרון או ברחוב, אתם משפרים לו את היום באופן מיידי. זה הכוח הסודי שלכם.
+                    </p>
+</div>
+</div>
+<!-- Tip 2: Homework -->
+<div class="group bg-white rounded-5xl shadow-2xl overflow-hidden card-reveal border-b-8 border-kind-purple" data-purpose="tip-card">
+<div class="h-64 overflow-hidden relative">
+<img alt="שתי ילדות לומדות יחד בכיף" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA1JmqhwPWDVjUpHRuV3LOyU8zc-I0-pJBzyV00dMFGT55LqcsxbleIMWcbF2LPhy0-VHJBlOl_RmUvlUjf7LKzzz5Yp_qycmR85QzEc8OdH8eMM1CX5nW4HVGDTNCF-S7jSchQts4M4abZaWxR50xnxexJXzGejcN6ZC9S9_Y-goe1JtdbxiWjr-sWgWWnikhRNgkgKhiF3_antjx_Yxe-sNsPJu5pLHUtPpyzg-h7c2GyemvSk3ZGAMHSHXCNQ-JcZwu36KRXqK-"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-kind-purple shadow-md flex items-center gap-2">
+<span>📚</span> שיתוף פעולה
+                    </div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black mb-4 text-gray-900">עזרו לחבר עם שיעורי הבית</h3>
+<p class="text-gray-600 text-lg leading-relaxed">
+                        טובים במתמטיקה? אלופים באנגלית? שתפו את הידע שלכם ועזרו למישהו שמתקשה. זה הכי מספק בעולם לראות מישהו אחר מצליח!
+                    </p>
+</div>
+</div>
+<!-- Tip 3: Compliment -->
+<div class="group bg-white rounded-5xl shadow-2xl overflow-hidden card-reveal border-b-8 border-sunny-yellow" data-purpose="tip-card">
+<div class="h-64 overflow-hidden relative">
+<img alt="קבוצת חברים צוחקים ומחמיאים" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWMSEXN8tPvF7GisbUJxIjxlbHq0KErFqK3nyn2yEiHhiZ1mjCgM4pG3XG667ZUjLso1WeF_qs0GtZCVKjxfSmK2rmz3DhOnEAWT-W4bhQDYgoF3aahE2bahPW8ow4b9w4A_JeQVZdXCSHiffdYp93sWBglgQleQP1ipDaZvaNu6_VE_9pLhI_qBNqKEAthLmH9_bi4nLVQskIpqYeZ7qsJc4I2z6k8EW0yQn79PPvOmZlrwLSu2S8pcHvB6V43fmicNN57xcCkKjv"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-yellow-600 shadow-md flex items-center gap-2">
+<span>💬</span> מילים טובות
+                    </div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black mb-4 text-gray-900">תנו מחמאה כנה</h3>
+<p class="text-gray-600 text-lg leading-relaxed">
+                        ראיתם חולצה יפה? מישהו אמר משהו חכם בשיעור? אל תשמרו את זה בלב - פשוט תגידו את זה! מילה טובה אחת יכולה להאיר שבוע שלם.
+                    </p>
+</div>
+</div>
+<!-- Tip 4: Trash -->
+<div class="group bg-white rounded-5xl shadow-2xl overflow-hidden card-reveal border-b-8 border-energetic-orange" data-purpose="tip-card">
+<div class="h-64 overflow-hidden relative">
+<img alt="ילדים אוספים פסולת בפארק" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPYpasoH9MZZX10aDReay0CjUiriiicpyIyQSj4aS6c-__I971G6MxWc82zXOW4-E1JXHgBMwrj0cL7dCw7jzUWPZu9YMunZiZVpNa4N4pomovKg9T7nHysGTi-ThnyNWnJHEs4PyRaf41okP97VIaZoI6i37b4lsXtRd-AAkaSdEOzrG921LKFHDr52sAI-uk_z8pwSSTBCQHBaa0gff952dmmjFdU_8w9-gPbC_T3qxJHOD9OjHNp3JeWyGBHInGOMK-jiHUDuBu"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-energetic-orange shadow-md flex items-center gap-2">
+<span>♻️</span> למען הסביבה
+                    </div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-black mb-4 text-gray-900">הרימו זבל מהרצפה</h3>
+<p class="text-gray-600 text-lg leading-relaxed">
+                        מעשה טוב הוא גם כלפי הסביבה שלנו. ראיתם עטיפה על הדשא בבית הספר? הרימו אותה לפח הקרוב. כדור הארץ יודה לכם!
+                    </p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- BEGIN: Final Action Section -->
+<section class="py-24 px-6 -mt-16 relative z-30">
+<div class="container mx-auto max-w-4xl">
+<div class="bg-gradient-to-br from-energetic-orange to-orange-500 rounded-5xl p-12 text-white shadow-3xl text-center transform -rotate-1">
+<h3 class="text-4xl md:text-5xl font-black mb-6 bubble-font">מוכנים להפיץ טוב?</h3>
+<p class="text-2xl mb-10 opacity-90 font-medium italic">"כל מעשה קטן הוא חלק משינוי גדול"</p>
+<button class="bg-white text-energetic-orange font-black py-5 px-16 rounded-full text-2xl hover:bg-sunny-yellow hover:text-gray-900 transition-all duration-300 shadow-xl hover:scale-105 active:scale-95" onclick="alert('כל הכבוד! העולם כבר נראה טוב יותר בזכותכם!')">
+                אני בפנים! 🚀
+            </button>
+</div>
+</div>
+</section>
+<!-- BEGIN: Share Your Own Section -->
+<section class="py-16 px-6 bg-gray-50/50" data-purpose="share-section">
+<div class="container mx-auto max-w-2xl">
+<div class="bg-white rounded-5xl p-10 shadow-xl border-4 border-dashed border-action-teal/30 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-action-teal/5 rounded-full -mr-12 -mt-12"></div>
+<div class="relative z-10">
+<h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">יש לכם רעיון משלכם? 💡</h3>
+<p class="text-gray-600 text-xl mb-8 font-medium">
+                חשבתם על דרך יצירתית לעשות טוב? אנחנו ממש רוצים לשמוע על זה!
+            </p>
+<div class="flex flex-col gap-4">
+<textarea class="w-full rounded-2xl border-2 border-gray-100 p-4 focus:ring-4 focus:ring-action-teal/20 focus:border-action-teal transition-all outline-none text-lg resize-none h-32" placeholder="ספרו לנו על המעשה הטוב שלכם..."></textarea>
+<button class="w-full bg-action-teal text-white font-black py-4 px-8 rounded-2xl text-xl hover:bg-teal-500 transition-all duration-300 shadow-lg hover:shadow-action-teal/20 active:scale-[0.98]" onclick="alert('איזה רעיון מדהים! תודה ששיתפתם אותנו!')">
+                    שתפו אותנו! ✨
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: Footer -->
+<footer class="bg-white py-16 px-6 text-center border-t border-gray-100">
+<div class="container mx-auto">
+<div class="flex justify-center space-x-8 space-x-reverse mb-8">
+<span class="text-3xl grayscale hover:grayscale-0 cursor-pointer transition-all duration-300 transform hover:scale-125">🌍</span>
+<span class="text-3xl grayscale hover:grayscale-0 cursor-pointer transition-all duration-300 transform hover:scale-125">❤️</span>
+<span class="text-3xl grayscale hover:grayscale-0 cursor-pointer transition-all duration-300 transform hover:scale-125">✨</span>
+</div>
+<p class="text-gray-400 font-bold text-lg">© 2024 יום המעשים הטובים - לדור שמשנה את העולם</p>
+<div class="mt-4 flex justify-center gap-4 text-action-teal font-black text-sm uppercase tracking-tighter opacity-50">
+<span>BE KIND</span>
+<span>•</span>
+<span>BE COOL</span>
+<span>•</span>
+<span>BE YOU</span>
+</div>
+</div>
+</footer>
+</body></html>
