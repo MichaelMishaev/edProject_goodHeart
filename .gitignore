@@ -1,6 +1,3 @@
-# Documentation with sensitive keys
-docs/
-
 # Environment variables
 .env
 .env.*
