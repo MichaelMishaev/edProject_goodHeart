@@ -15,13 +15,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Existing UI/UX Design
 
-**Location**: `docs/uiux/stitch_generated_screen/`
+**Location**: `docs/uiux/`
 
 A professional UI design has been created using Google Stitch with:
-- **Visual Reference**: `screen.png` - Mobile screenshot of the design
-- **HTML Prototype**: `code.html` - Fully functional HTML/Tailwind implementation
+- **Visual Reference**: `stitch_generated_screen/screen.png` - Mobile screenshot of the design
+- **HTML Prototype**: `stitch_generated_screen/code.html` - Fully functional HTML/Tailwind implementation
+- **Logo**: `logo.png` - Hands forming a heart with colorful gradients and sparkles
 
 This design is MORE sophisticated than the original PRD and should be used as the reference for implementation.
+
+### Logo Usage
+- Display at the top of the Hero section with floating animation
+- Use the image at `docs/uiux/logo.png`
+- Copy to `public/images/logo.png` during implementation
+- Recommended size: 120x120px (mobile), can scale up to 150x150px (desktop)
+- The logo features hands forming a heart shape with gradients matching the color palette
 
 ### Design Characteristics
 - **Modern aesthetic**: Card-based layout with imagery, gradients, and animations
