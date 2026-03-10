@@ -1,25 +1,28 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'action-teal': '#00A896',
-        'sunny-yellow': '#FFC107',
-        'energetic-orange': '#FF6B35',
-        'kind-purple': '#9C27B0',
-        'soft-cream': '#FFF8DC',
-        'gentle-gray': '#F5F5F5',
+        "action-teal": "#2DD4BF",
+        "sunny-yellow": "#FDE047",
+        "energetic-orange": "#FB923C",
+        "kind-purple": "#A78BFA",
+      },
+      borderRadius: {
+        "4xl": "2rem",
+        "5xl": "3rem",
       },
       fontFamily: {
-        heebo: ['var(--font-heebo)'],
+        heebo: ["var(--font-heebo)", "sans-serif"],
       },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [require("@tailwindcss/forms")],
+};
+export default config;
