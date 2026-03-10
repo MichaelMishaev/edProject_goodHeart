@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "hashtag": "#GoodDeedsDay",
+    "title": "Good Deeds Day:",
+    "titleHighlight": "The Power to Be Kind!",
+    "subtitle": "Ready to change the world? Every small act can create a huge impact. Here are some cool ways you can spread light today!"
+  },
+  "tips": [
+    {
+      "id": "smile",
+      "badge": "😊",
+      "badgeText": "Easiest One",
+      "title": "Smile at Someone You Don't Know",
+      "description": "A smile is contagious! When you smile at someone in the hallway or on the street, you instantly brighten their day. That's your secret superpower.",
+      "imageAlt": "Child smiling at a friend at school"
+    },
+    {
+      "id": "homework",
+      "badge": "📚",
+      "badgeText": "Teamwork",
+      "title": "Help a Friend with Homework",
+      "description": "Good at math? Great at English? Share your knowledge and help someone who's struggling. Nothing feels better than seeing someone else succeed!",
+      "imageAlt": "Two girls studying together happily"
+    },
+    {
+      "id": "compliment",
+      "badge": "💬",
+      "badgeText": "Kind Words",
+      "title": "Give a Genuine Compliment",
+      "description": "See a nice shirt? Did someone say something smart in class? Don't keep it to yourself - just say it! One kind word can light up someone's entire week.",
+      "imageAlt": "Group of friends laughing and complimenting each other"
+    },
+    {
+      "id": "trash",
+      "badge": "♻️",
+      "badgeText": "For the Environment",
+      "title": "Pick Up Trash from the Ground",
+      "description": "A good deed is also for our environment. See a wrapper on the grass at school? Pick it up and throw it in the nearest bin. Planet Earth thanks you!",
+      "imageAlt": "Children collecting litter in a park"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Spread Kindness?",
+    "quote": "Every small act is part of a big change",
+    "button": "I'm In! 🚀",
+    "successAlert": "Well done! The world already looks better because of you!"
+  },
+  "share": {
+    "title": "Got Your Own Idea? 💡",
+    "subtitle": "Thought of a creative way to do good? We really want to hear about it!",
+    "placeholder": "Tell us about your good deed...",
+    "button": "Share With Us! ✨",
+    "successAlert": "What an amazing idea! Thanks for sharing with us!"
+  },
+  "footer": {
+    "copyright": "© 2024 Good Deeds Day - For a generation that changes the world",
+    "motto": ["BE KIND", "BE COOL", "BE YOU"]
+  }
+}
